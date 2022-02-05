@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 05, 2022 at 09:25 AM
--- Server version: 10.4.17-MariaDB
--- PHP Version: 7.4.14
+-- Generation Time: Feb 05, 2022 at 01:29 PM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 8.1.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `persons_info` (
   `id` int(10) NOT NULL,
   `name` varchar(100) NOT NULL,
-  `age` int(2) NOT NULL
+  `age` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -38,8 +38,10 @@ CREATE TABLE `persons_info` (
 --
 
 INSERT INTO `persons_info` (`id`, `name`, `age`) VALUES
-(1, 'chetsadakorn Mueangnam', 21),
-(2, 'John smit', 30);
+(1, 'Ratcharote Angthong', 21),
+(2, 'John Smith', 25),
+(3, 'Mark Dev', 26),
+(4, 'Vahan Copper', 30);
 
 --
 -- Indexes for dumped tables
@@ -59,7 +61,7 @@ ALTER TABLE `persons_info`
 -- AUTO_INCREMENT for table `persons_info`
 --
 ALTER TABLE `persons_info`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
